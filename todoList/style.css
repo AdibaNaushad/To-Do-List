@@ -1,27 +1,47 @@
-body{
+body {
+    background: radial-gradient(263px at 100.2% 3%,
+     rgb(121, 215, 255) 31.1%,
+      rgb(205, 181, 93) 36.4%,
+       rgb(244, 102, 90) 50.9%,
+        rgb(199, 206, 187) 60.7%,
+         rgb(249, 140, 69) 72.5%,
+          rgb(121, 215, 255) 72.6%);
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-attachment: fixed;
+
 }
 
-#main-heading{
+
+#main-heading {
     text-align: center;
+    color: rgb(248, 248, 248);
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-        grid-template-columns: 200px 150px 100px;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin: 10px;
-        align-items: center;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 100px;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
 
 }
 
-#todo-input ,#todo-date{
+
+#todo-input,
+#todo-date {
     font-size: 15px;
     padding: 10px;
+    border-radius: 15px;
+    border: black;
+
 }
 
-.btn-delect{
+.btn-delect {
     background-color: rgb(117, 26, 26);
     color: white;
     border: none;
@@ -30,12 +50,53 @@ body{
     cursor: pointer;
 }
 
-.btn-add{
-    background-color:green;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        padding: 15px 0px;
-        cursor: pointer;
+.btn-add {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0px;
+    cursor: pointer;
 
+}
+
+#theme-toggle {
+    background-color: rgb(120, 120, 120);
+    color: rgb(28, 28, 28);
+    border-radius: 10px;
+    border: 1px black;
+    padding: 15px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 18px;
+
+
+}
+
+.theme-button {
+    background: linear-gradient(135deg, #79d7ff, #ff6e6e);
+   
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.theme-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #f98c45, #3a3838);
+    
+}
+
+.dark {
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
 }
