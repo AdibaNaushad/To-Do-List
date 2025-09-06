@@ -1,9 +1,9 @@
 let todoList=[
-    {item:  'buy milk',
-         dueDate: '4/5/2025'},
+    {item:  'Be Hydrated',
+         dueDate: '2025-09-05'},
 
-    {item: 'go to cllg',
-         dueDate: '4/5/2025'}
+    {item: 'Go to cllg',
+         dueDate: '2025-09-05'}
 
 ]; //global variable
 
@@ -49,6 +49,32 @@ function addTodo() {
         containerElement.innerHTML=newHtml;
         
     }
-    
-    
-    
+
+
+
+
+
+
+
+
+
+function changeTheme() {
+    let body = document.querySelector("body");
+
+    if (body.classList.contains("dark")) {
+        body.classList.remove("dark");
+    }
+    else {
+        body.classList.add("dark");
+    }
+}
+
+
+
+
+let themeButton = document.querySelector("#theme-toggle");
+
+themeButton.addEventListener("click", changeTheme);
+
+
+
